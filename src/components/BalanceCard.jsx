@@ -25,23 +25,22 @@ const BalanceCard = () => {
 
       <div className="mt-6 flex flex-wrap items-center gap-2">
         <div className="flex flex-wrap gap-2 flex-grow">
-          <button className="min-w-[80px] flex-1 flex items-center justify-center gap-1 bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-lg px-3 py-3 text-sm">
+          <button className="min-w-[10px] flex-1 flex items-center justify-center gap-1 bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-lg px-3 py-3 text-xs md:text-sm">
             <ArrowUp className="text-base" />
             Send
           </button>
-          <button className="min-w-[80px] flex-1 flex items-center justify-center gap-1 bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-lg px-3 py-3 text-sm">
+          <button className="min-w-[80px] flex-1 flex items-center justify-center gap-1 bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-lg px-3 py-3 text-[0.7rem] md:text-sm">
             <ArrowUp className="text-base" />
             Receive
           </button>
-          <button className="min-w-[80px] flex-1 flex items-center justify-center gap-1 bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-lg px-3 py-3 text-sm">
+          <button className="min-w-[10px] flex-1 flex items-center justify-center gap-1 bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-lg px-3 py-3 text-xs md:text-sm">
             <FaExchangeAlt className="text-base" />
             Swap
           </button>
+          <button className="bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-full p-3">
+            <FiMoreVertical />
+          </button>
         </div>
-
-        <button className="bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-full p-3">
-          <FiMoreVertical />
-        </button>
       </div>
     </div>
   );

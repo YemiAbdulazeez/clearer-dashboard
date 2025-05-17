@@ -94,10 +94,10 @@ const FxRates = () => {
           >
             {/* Flags */}
             <div className="relative w-[44px] h-[44px] mr-2">
-              <span className="absolute top-0 left-0 z-0 text-sm px-4 py-3  rounded-full bg-white shadow">
+              <span className="absolute top-0 left-0 z-0 text-lg px-4 py-3  rounded-full bg-white shadow">
                 {item.flagFrom}
               </span>
-              <span className="absolute top-0 left-4 z-10 text-sm px-4 py-3 rounded-full bg-white shadow">
+              <span className="absolute top-0 left-4 z-10 text-lg px-4 py-3 rounded-full bg-white shadow">
                 {item.flagTo}
               </span>
             </div>
