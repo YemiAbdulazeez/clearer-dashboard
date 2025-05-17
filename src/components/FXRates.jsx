@@ -5,62 +5,70 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaExchangeAlt } from "react-icons/fa";
 
+import ngFlag from "../assets/flags/nigeria.png";
+import usFlag from "../assets/flags/united-states.png";
+import euFlag from "../assets/flags/european-union.png";
+import ukFlag from "../assets/flags/united-kingdom.png";
+import jpFlag from "../assets/flags/japan.png";
+
+import exchange from "../assets/icons/exchange.png";
+
 const rates = [
   {
     from: "NGN",
     to: "USD",
-    flagFrom: "🇳🇬",
-    flagTo: "🇺🇸",
+    flagFrom: ngFlag,
+    flagTo: usFlag,
     rate: "₦1,640",
     symbol: "$1",
   },
   {
     from: "NGN",
     to: "GBP",
-    flagFrom: "🇳🇬",
-    flagTo: "🇬🇧",
+    flagFrom: ngFlag,
+    flagTo: ukFlag,
     rate: "₦1,640",
     symbol: "£1",
   },
   {
     from: "NGN",
     to: "EUR",
-    flagFrom: "🇳🇬",
-    flagTo: "🇪🇺",
+    flagFrom: ngFlag,
+    flagTo: euFlag,
     rate: "₦1,640",
     symbol: "€1",
   },
   {
     from: "NGN",
     to: "YEN",
-    flagFrom: "🇳🇬",
-    flagTo: "🇯🇵",
+    flagFrom: ngFlag,
+    flagTo: jpFlag,
     rate: "₦1,640",
     symbol: "¥1",
   },
   {
     from: "NGN",
-    to: "CAD",
-    flagFrom: "🇳🇬",
-    flagTo: "🇨🇦",
+    to: "YEN",
+    flagFrom: ngFlag,
+    flagTo: jpFlag,
     rate: "₦1,640",
-    symbol: "C$1",
+    symbol: "¥1",
   },
   {
     from: "NGN",
-    to: "AUD",
-    flagFrom: "🇳🇬",
-    flagTo: "🇦🇺",
+    to: "YEN",
+    flagFrom: ngFlag,
+    flagTo: jpFlag,
     rate: "₦1,640",
-    symbol: "A$1",
+    symbol: "¥1",
   },
   {
     from: "NGN",
-    to: "ZAR",
-    flagFrom: "🇳🇬",
-    flagTo: "🇿🇦",
+    to: "YEN",
+    flagFrom: ngFlag,
+    flagTo: jpFlag,
     rate: "₦1,640",
-    symbol: "R1",
+    symbol: "¥1",
   },
 ];
 
@@ -90,16 +98,20 @@ const FxRates = () => {
           <SwiperSlide
             key={index}
             style={{ width: "auto" }}
-            className="bg-[#F2F2F3] rounded-md pl-2 pr-4 pt-3 pb-5 flex items-center gap-4"
+            className="bg-[#F2F2F3] rounded-xl pl-3 pr-4 pt-3 pb-4 flex items-center gap-4"
           >
             {/* Flags */}
-            <div className="relative w-[44px] h-[44px] mr-10">
-              <span className="absolute top-0 left-0 z-0 text-lg px-4 py-3  rounded-full bg-white shadow">
-                {item.flagFrom}
-              </span>
-              <span className="absolute top-0 left-10 z-10 text-lg px-4 py-3 rounded-full bg-white shadow">
-                {item.flagTo}
-              </span>
+            <div className="relative w-[40px] h-[40px] mr-4">
+              <img
+                src={item.flagFrom}
+                alt="From"
+                className="absolute top-0 left-0 z-0 rounded-full border border-gray-300"
+              />
+              <img
+                src={item.flagTo}
+                alt="To"
+                className="absolute top-0 left-6 z-10  rounded-full border border-gray-300"
+              />
             </div>
 
             {/* From Currency */}
@@ -108,8 +120,9 @@ const FxRates = () => {
               <br />
               <span className="text-black">{item.rate}</span>
             </div>
+            <img className="w-4" src={exchange} />
 
-            <FaExchangeAlt className="text-gray-500" />
+            <exchange className="text-gray-500" />
 
             {/* To Currency */}
             <div className="text-sm text-gray-700 font-medium leading-tight">

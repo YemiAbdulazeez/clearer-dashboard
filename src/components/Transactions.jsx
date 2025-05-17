@@ -7,6 +7,7 @@ import {
 } from "react-icons/fi";
 import { FaExchangeAlt } from "react-icons/fa";
 
+
 const transactions = [
   {
     icon: <FiArrowUp className="text-red-500" />,
