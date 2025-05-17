@@ -13,7 +13,7 @@ const BalanceCard = () => {
           <span className="text-xs text-gray-400">Naira</span>
           <FiChevronDown className="text-gray-600" />
         </div>
-        <button className="flex items-center text-sm text-gray-800 hover:text-black">
+        <button className="flex items-center text-sm text-gray-800 hover:text-black hover:underline">
           <FiPlus className="mr-1" />
           Deposit
         </button>

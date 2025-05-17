@@ -34,12 +34,12 @@ const Header = () => {
       <header
         className={`fixed top-0 left-0 w-full z-50 px-4 lg:px-24 transition-all duration-300 ${
           scrolled
-            ? " backdrop-blur-md shadow-sm border border-gray-200"
+            ? "bg-[#F8F8F8] shadow-sm border-b border-gray-200"
             : "bg-[#F8F8F8]"
         }`}
       >
         <div className="flex items-center justify-between py-6 border-b border-gray-200">
-          {/* Left: Logo & Nav */}
+        
           <div className="flex items-center gap-6">
             <div className="text-black font-bold text-xl flex items-center">
               <span className="text-3xl font-bold leading-none">C</span>
@@ -67,6 +67,7 @@ const Header = () => {
             </nav>
           </div>
 
+        
           <div className="hidden md:flex items-center gap-6">
             <button className="flex items-center gap-2 bg-[#4F4F4F] hover:bg-black text-white text-sm px-3 py-1.5 rounded-full shadow-sm">
               <FiUser size={16} />
@@ -87,6 +88,7 @@ const Header = () => {
           </button>
         </div>
 
+       
         <div
           className={`fixed top-0 left-0 h-full w-64 bg-white z-[999] shadow-lg transform transition-transform duration-300 ease-in-out md:hidden ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
@@ -135,6 +137,7 @@ const Header = () => {
           </nav>
         </div>
 
+      
         {isMenuOpen && (
           <div
             onClick={() => setIsMenuOpen(false)}
@@ -143,7 +146,7 @@ const Header = () => {
         )}
       </header>
 
-      {/* Spacer for fixed header */}
+    
       <div className="h-[20px]" />
     </div>
   );

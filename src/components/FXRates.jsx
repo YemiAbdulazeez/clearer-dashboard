@@ -90,14 +90,13 @@ const FxRates = () => {
           <SwiperSlide
             key={index}
             style={{ width: "auto" }}
-            className="bg-[#F2F2F3] rounded-md px-4 py-3 flex items-center gap-4"
+            className="bg-[#F2F2F3] rounded-md pl-2 pr-4 pt-3 pb-5 flex items-center gap-4"
           >
             {/* Flags */}
-            <div className="relative w-[44px] h-[44px] mr-2">
+            <div className="relative w-[44px] h-[44px] mr-10">
               <span className="absolute top-0 left-0 z-0 text-lg px-4 py-3  rounded-full bg-white shadow">
                 {item.flagFrom}
-              </span>
-              <span className="absolute top-0 left-4 z-10 text-lg px-4 py-3 rounded-full bg-white shadow">
+              <span className="absolute top-0 left-10 z-10 text-lg px-4 py-3 rounded-full bg-white shadow">
                 {item.flagTo}
               </span>
             </div>

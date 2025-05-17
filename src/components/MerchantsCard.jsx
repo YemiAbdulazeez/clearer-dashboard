@@ -6,7 +6,7 @@ const MerchantsCard = () => {
     <div className="bg-white rounded-lg border p-4 md:p-6 flex flex-col h-full">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-800">Merchants</h3>
-        <button className="flex items-center text-sm text-gray-800 hover:text-black">
+        <button className="flex items-center text-sm text-gray-800 hover:text-black hover:underline">
           <FiPlus className="mr-1 text-base" />
           Add Merchants
         </button>
@@ -19,10 +19,10 @@ const MerchantsCard = () => {
               key={idx}
               className="flex-shrink-0 flex flex-col items-center text-center"
             >
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#F2F2F3] flex items-center justify-center text-md font-semibold text-gray-700">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#F2F2F3] hover:bg-slate-200 flex items-center justify-center text-md font-semibold text-gray-700">
                 AD
               </div>
-              <span className="text-xs mt-1 text-gray-600 bg-[#F2F2F3] px-2 py-1 rounded-md">
+              <span className="text-xs mt-1 text-gray-600 bg-[#F2F2F3] hover:bg-slate-200 px-2 py-1 rounded-md">
                 {`Adisa Debowale`.slice(0, 10) + "..."}
               </span>
             </div>
