@@ -37,7 +37,7 @@ const BalanceCard = () => {
             <FaExchangeAlt className="text-base" />
             Swap
           </button>
-          <button className="bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-full p-3">
+          <button className="bg-[#F2F2F3] hover:bg-gray-200 text-black rounded-full p-4">
             <FiMoreVertical />
           </button>
         </div>
